@@ -1,0 +1,20 @@
+{
+  "name": "bite-bank",
+  "version": "1.0.0",
+  "description": "estudando orientação a objeto",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eubrenobrito/javascript-programando-a-orienta-o-a-objetos.git"
+  },
+  "author": "niilist",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Eubrenobrito/javascript-programando-a-orienta-o-a-objetos/issues"
+  },
+  "homepage": "https://github.com/Eubrenobrito/javascript-programando-a-orienta-o-a-objetos#readme"
+}
