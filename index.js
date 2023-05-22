@@ -2,26 +2,15 @@ import { Cliente} from "./Cliente.js";
 import {ContaCorrente} from "./ContaCorrente.js";
 
 
-const cliente1 = new Cliente();
+const cliente1 = new Cliente( 'Breno', 1022219552265);
+const cliente2 = new Cliente('jurubeba',1033319552265 );
 
- cliente1.nome = 'Breno';
- cliente1.cpf = 1022219552265;
+const contaCorrenteBreno = new ContaCorrente( 1001, cliente1);
+//pra toda vez que eu tiver um new ContaCorrente vai incrementar na variavel numeroDeContas
+contaCorrenteBreno.depositar(500);
+const conta2 = new ContaCorrente(1022, cliente2 );
 
-const cliente2 = new Cliente();
- cliente2.nome = 'jurubeba';
- cliente2.cpf = 1033319552265;
+// let valor= 200;
+// contaCorrenteBreno.transferir(valor, conta2);
 
-const contaCorrenteBreno = new ContaCorrente();
-
-contaCorrenteBreno._saldo = 0;
-contaCorrenteBreno.agencia = 1001;
-
-contaCorrenteBreno.depositar(100);
-contaCorrenteBreno.depositar(200);
-contaCorrenteBreno.depositar(200);
-contaCorrenteBreno.depositar(200);
-contaCorrenteBreno.depositar(200);
-
-contaCorrenteBreno.sacar(50);
-
-console.log(contaCorrenteBreno);
+console.log(ContaCorrente.numeroDeContas);
